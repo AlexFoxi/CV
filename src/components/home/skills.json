@@ -1,0 +1,101 @@
+{
+  "frontEnd": {
+    "name": "Front-end",
+    "data": [
+      {
+        "name": "HTML",
+        "experience": "3 years 8 months"
+      },
+      {
+        "name": "CSS",
+        "experience": "3 years 8 months"
+      },
+      {
+        "name": "JavaScript",
+        "experience": "3 years 8 months"
+      },
+      {
+        "name": "React",
+        "experience": "1 year"
+      },
+      {
+        "name": "NextJs",
+        "experience": "1 year"
+      },
+      {
+        "name": "TypeScript",
+        "experience": ""
+      },
+      {
+        "name": "Redux",
+        "experience": ""
+      },
+      {
+        "name": "Styles-components",
+        "experience": ""
+      },
+      {
+        "name": "Sass/SCSS",
+        "experience": ""
+      },
+      {
+        "name": "Tailwind",
+        "experience": ""
+      },
+      {
+        "name": "Figma",
+        "experience": ""
+      },
+      {
+        "name": "REST API",
+        "experience": ""
+      }
+    ]
+  },
+  "backend": {
+    "name": "Back-end",
+    "data": [
+      {
+        "name": "Node.js",
+        "experience": "2 months"
+      },
+      {
+        "name": "Nest.js",
+        "experience": "2 months"
+      },
+      {
+        "name": "PostgreSQL",
+        "experience": "2 months"
+      }
+    ]
+  },
+  "others": {
+    "name": "Others",
+    "data": [
+      {
+        "name": "Git",
+        "experience": ""
+      },
+      {
+        "name": "VS Code",
+        "experience": ""
+      },
+      {
+        "name": "OOP",
+        "experience": ""
+      },
+      {
+        "name": "GitHub",
+        "experience": ""
+      },
+      {
+        "name": "Webpack",
+        "experience": ""
+      },
+      {
+        "name": "Vite",
+        "experience": ""
+      }
+    ]
+  }
+}

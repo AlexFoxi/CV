@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "alwaysStrict": true,
+
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "composite": true,
+
+    "incremental": true,
+    "noEmit": true,
+    "noEmitHelpers": false,
+    "forceConsistentCasingInFileNames": true,
+
+    "jsx": "preserve",
+
+    "baseUrl": "./src",
+    "paths": {
+      "@/ui/*": ["components/ui/*"],
+      "@/components/*": ["components/*"],
+      "@/assets/*": ["assets/*"],
+      "@/styles": ["styles/*"],
+      "@/helpers/*": ["helpers/*"],
+      "@/*": ["/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.scss"],
+  "references": [{ "path": "./tsconfig.app.json" }],
+  "exclude": ["node_modules"]
+}
