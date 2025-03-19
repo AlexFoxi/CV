@@ -6,7 +6,7 @@
 }
 
 .box {
-  background: $light-blue;
+  background-color: $light-blue;
   border-radius: $XS2;
   position: relative;
   padding: $S;
@@ -36,7 +36,7 @@
     width: 30rem;
     height: 30rem;
     border-radius: 50%;
-    background: $dark;
+    background-color: $dark;
 
     img {
       height: 90%;
@@ -125,7 +125,7 @@
       font-size: $TextG;
     }
     svg path {
-      fill: $green rgb(0, 172, 0);
+      fill: $green;
     }
   }
 }
@@ -134,4 +134,15 @@
   display: flex;
   flex-direction: column;
   gap: $S;
+}
+
+@media (prefers-color-scheme: light) {
+  .box {
+    background-color: $dark;
+  }
+  .profile {
+    .avatar {
+      background-color: $light-blue;
+    }
+  }
 }

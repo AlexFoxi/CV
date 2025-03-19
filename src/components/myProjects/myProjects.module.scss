@@ -2,13 +2,15 @@
   font-size: $TextL;
   margin-bottom: $XS;
 }
+
 .list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   column-gap: $XS;
-  row-gap: $XS2;
+  row-gap: $XS;
 }
+
 .project {
   display: flex;
   align-items: center;
@@ -19,6 +21,7 @@
 
   padding: $XS;
 }
+
 .image {
   max-width: 15rem;
   min-width: 15rem;
@@ -27,6 +30,7 @@
     height: 100%;
   }
 }
+
 .about {
   h3 {
     font-size: $TextM;
@@ -37,6 +41,7 @@
     font-size: $TextG;
   }
 }
+
 .links {
   position: absolute;
   top: $XS2;
@@ -54,6 +59,22 @@
     }
     &:hover {
       scale: 1.2;
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .project {
+    border: 1px solid $light-blue;
+  }
+
+  .links {
+    a {
+      svg {
+        path {
+          fill: $light-blue;
+        }
+      }
     }
   }
 }
