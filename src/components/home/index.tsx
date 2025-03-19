@@ -1,5 +1,11 @@
 import cn from 'clsx'
 
+import LinkHover from '@/ui/LinkHover'
+
+import CheckIco from '@/assets/icons/CheckIco'
+import GitIco from '@/assets/icons/GitIco'
+import LinkedinIco from '@/assets/icons/LinkedinIco'
+import TelegramIco from '@/assets/icons/TelegramIco'
 import myImage from '@/assets/photo.jpg'
 
 import styles from './home.module.scss'
@@ -27,7 +33,24 @@ const Home = () => {
         <div className={styles.avatar}>
           <img src={myImage} alt='photo' />
         </div>
-        <h1>Kostushevich Oleksandr</h1>
+        <div className={styles.socialInfo}>
+          <h1>Kostushevich Oleksandr</h1>
+          <div className={styles.socials}>
+            <LinkHover href='https://github.com/AlexFoxi' target text='Github'>
+              <GitIco />
+            </LinkHover>
+            <LinkHover
+              href='https://alexfoxi.github.io/Zoom-Img/'
+              target
+              text='Linkedin'
+            >
+              <LinkedinIco />
+            </LinkHover>
+            <LinkHover href='https://t.me/MeroMori' target text='Telegram'>
+              <TelegramIco />
+            </LinkHover>
+          </div>
+        </div>
         <div className={styles.profileInfo}>
           <div>
             <p>Position:</p>
@@ -79,17 +102,7 @@ const Home = () => {
                     <>
                       <p>{skill.name}</p>
                       {skill.experience === '' ? (
-                        <svg
-                          xmlns='http://www.w3.org/2000/svg'
-                          width={15}
-                          hanging={15}
-                          viewBox='0 0 512 512'
-                        >
-                          <path
-                            fill='currentColor'
-                            d='M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'
-                          ></path>
-                        </svg>
+                        <CheckIco />
                       ) : (
                         <span>- {skill.experience}</span>
                       )}

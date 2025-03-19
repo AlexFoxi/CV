@@ -1,6 +1,5 @@
 .title {
   font-size: $TextL;
-  margin-bottom: $XS;
 }
 
 .list {
@@ -15,7 +14,7 @@
   display: flex;
   align-items: center;
   gap: $XS;
-  border: 1px solid $dark;
+  border: 2px solid $dark;
   border-radius: $XS2;
   position: relative;
 
@@ -74,6 +73,42 @@
         path {
           fill: $light-blue;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: $TextM;
+  }
+
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: initial;
+    grid-auto-rows: 1fr;
+  }
+
+  .image {
+    max-width: 10rem;
+    min-width: 10rem;
+  }
+
+  .about {
+    h3 {
+      font-size: $TextG;
+      margin-bottom: $XS2;
+    }
+    p {
+      font-size: $TextS;
+    }
+  }
+
+  .links {
+    a {
+      svg {
+        width: 2.2rem;
+        height: 2.2rem;
       }
     }
   }
