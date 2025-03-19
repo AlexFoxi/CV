@@ -5,6 +5,7 @@ import ImageCustom from '@/ui/Image'
 import LinkHover from '@/ui/LinkHover'
 
 import LinkIco from '@/assets/icons/LinkIco'
+import LinkToIco from '@/assets/icons/LinkToIco'
 import LinkedinIco from '@/assets/icons/LinkedinIco'
 import BTC from '@/assets/siteLogos/BTC.svg'
 import ItHoot from '@/assets/siteLogos/ItHoot.svg'
@@ -45,7 +46,7 @@ const Projects: React.FC<props> = ({ title }) => {
               <LinkedinIco />
             </LinkHover>
             <LinkHover href='https://ithoot.com' target text='Preview'>
-              <LinkIco />
+              <LinkToIco />
             </LinkHover>
           </div>
         </div>
@@ -63,7 +64,7 @@ const Projects: React.FC<props> = ({ title }) => {
               target
               text='Preview'
             >
-              <LinkIco />
+              <LinkToIco />
             </LinkHover>
           </div>
         </div>
@@ -86,7 +87,7 @@ const Projects: React.FC<props> = ({ title }) => {
           </div>
           <div className={styles.links}>
             <LinkHover href='https://dicing.com' target text='Preview'>
-              <LinkIco />
+              <LinkToIco />
             </LinkHover>
           </div>
         </div>
@@ -106,7 +107,7 @@ const Projects: React.FC<props> = ({ title }) => {
           </div>
           <div className={styles.links}>
             <LinkHover href='https://www.leroymerlin.ua' target text='Preview'>
-              <LinkIco />
+              <LinkToIco />
             </LinkHover>
           </div>
         </div>

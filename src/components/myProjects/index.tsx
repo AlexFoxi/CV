@@ -4,6 +4,7 @@ import React from 'react'
 import LinkHover from '@/ui/LinkHover'
 
 import LinkIco from '@/assets/icons/LinkIco'
+import LinkToIco from '@/assets/icons/LinkToIco'
 
 import styles from './myProjects.module.scss'
 
@@ -39,7 +40,7 @@ const MyProjects: React.FC<props> = ({ title }) => {
               target
               text='Preview'
             >
-              <LinkIco />
+              <LinkToIco />
             </LinkHover>
           </div>
         </div>
@@ -61,7 +62,7 @@ const MyProjects: React.FC<props> = ({ title }) => {
               target
               text='Preview'
             >
-              <LinkIco />
+              <LinkToIco />
             </LinkHover>
           </div>
         </div>
@@ -87,7 +88,7 @@ const MyProjects: React.FC<props> = ({ title }) => {
               target
               text='Preview'
             >
-              <LinkIco />
+              <LinkToIco />
             </LinkHover>
           </div>
         </div>
