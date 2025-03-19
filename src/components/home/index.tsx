@@ -40,7 +40,7 @@ const Home = () => {
               <GitIco />
             </LinkHover>
             <LinkHover
-              href='https://alexfoxi.github.io/Zoom-Img/'
+              href='https://www.linkedin.com/in/олександр-костушевич-3b5030171/?locale=en_US'
               target
               text='Linkedin'
             >
